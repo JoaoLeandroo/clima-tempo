@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body, html {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #00FF80, #8904B1);
+}
+
+.main-center {
+    max-width: 1280px;
+    width: 100%;
+    max-height: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-area {
+    max-width: 500px;
+    width: 90%;
+    height: 400px;
+    background-color: #000000be;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-area input {
+    width: 80%;
+    height: 40px;
+    padding: 4px;
+    background-color: #E6E6E6;
+    font-size: 18px;
+    margin-top: 5%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.app-area .btn-search {
+    width: 100px;
+    height: 60px;
+    background-color: #088A68;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 10px auto;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.app-area .btn-search:hover {
+    background-color: #01DFA5;
+}
+
+.area-result {
+    width: 80%;
+    height: 60vh;
+    margin: 2% auto;
+    padding: 10px;
+    color: #fff;
+}
+
+.area-result .location {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location span {
+    text-shadow: 4px 4px 4px black;
+    font-weight: 700;
+}
+
+.area-result h2 {
+    font-size: 32px;
+    text-shadow: 4px 4px 4px #000000;
+}
+
+.temp-c {
+    width: 100%;
+    margin: 15px auto;
+}
+
+.area-result .humidity{
+    font-size: 18px;    
+    margin-top: 10px;
+    font-weight: 700;
+    text-shadow: 3px 3px 3px #000000;
+}
+
+.area-result .icons {
+    width: 100%;
+    margin: 10% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons p {
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 4px 4px 4px #000000;
+}
+
+@media screen and (max-width: 650px) {
+    .location h2 {
+        font-size: 20px;
+    }
+}
